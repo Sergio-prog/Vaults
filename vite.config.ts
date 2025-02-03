@@ -29,12 +29,12 @@ export default defineConfig({
   server: {
     host: true,
     allowedHosts: ["orius-finance.vercel.app"],
-    proxy: {
-      "/api": {
-        target: `http://138.197.187.21:3000/`,
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
+    // proxy: {
+    //   "/api": {
+    //     target: `http://138.197.187.21:3000/`,
+    //     changeOrigin: true,
+    //     rewrite: (path) => path.replace(/^\/api/, ""),
+    //   },
+    // },
   },
 });
