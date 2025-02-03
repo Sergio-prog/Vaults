@@ -101,7 +101,7 @@ export default function Chat() {
                                   ? attachment.url
                                   : attachment.url.startsWith("http")
                                     ? attachment.url
-                                    : `http://localhost:3000/media/generated/${attachment.url.split("/").pop()}`
+                                    : `http://138.197.187.21:3000//media/generated/${attachment.url.split("/").pop()}`
                               }
                               alt={attachment.title || "Attached image"}
                               className="mt-2 max-w-full rounded-lg"
