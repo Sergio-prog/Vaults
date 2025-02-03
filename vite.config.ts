@@ -28,7 +28,7 @@ export default defineConfig({
   },
   server: {
     host: true,
-    allowedHosts: ["40f9-212-87-171-26.ngrok-free.app"],
+    allowedHosts: ["orius-finance.vercel.app"],
     proxy: {
       "/api": {
         target: `http://138.197.187.21:3000`,
