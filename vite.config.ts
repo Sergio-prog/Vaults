@@ -31,7 +31,7 @@ export default defineConfig({
     allowedHosts: ["orius-finance.vercel.app"],
     proxy: {
       "/api": {
-        target: `http://138.197.187.21:3000`,
+        target: `http://138.197.187.21:3000/`,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
